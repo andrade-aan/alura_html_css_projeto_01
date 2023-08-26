@@ -85,7 +85,7 @@ body {
 
 .secundario {
     align-items: center;
-    margin: 0 6em;
+    margin: 0 10em;
 }
 
 
@@ -93,3 +93,24 @@ body {
    width: 80%; /* percentual em relação a coluna em que está inserida */
 }
 
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.1em;
+}
+
+
+.descricao__texto {
+
+    color: var(--color-text-small-grey);
+
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.secundario__imagem__section_03 {
+    width: 150%;
+}
