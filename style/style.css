@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Inter&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --color-text-title-white: #fff;
+    --color-text-small-grey: #c0c0c0;
+    --color-bottom-blue: #167bf7;
+    --color-background-dark: #00030c;
+
+    --chakra-font: 'Chakra Petch', sans-serif;
+    --krona-font: 'Krona One', sans-serif;
+    --montserrat-font: 'Montserrat', sans-serif;
+    --inter-font: 'Inter', sans-serif;
+
+}
+
+body {
+
+    background-color: var(--color-background-dark);
+    color: var(--color-text-title-white);
+    font-family: var(--inter-font);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.principal {
+    background-image: url("../images/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;  /*https://developer.mozilla.org/en-US/docs/Web/CSS/background-size*/
+    align-items: center;
+    text-align: center;
+
+}
+
+.conteiner {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    
+}
+
+.conteiner__caixa {
+
+    margin: 0 6em; /* Neste caso, o 0 representa top e bottom e o 6em right and left*/
+
+}
+
+.conteiner__botao {
+
+    text-align: center;
+    padding: 1em; /* 1em varia o padding de acordo com o tamanho da fonte, proporcional*/
+    background-color: var(--color-bottom-blue);
+    color: var(--color-text-title-white);
+    border-radius: 10px;
+    font-family: var(--montserrat-font);
+    display: block;
+    text-decoration: none;
+    /*margin: 15px;*/
+    margin-bottom: 1em; /* margem inferior relativo ao tamanho do texto */
+    
+}
+
+.conteiner__imagem {
+    margin: 1em 0 2em 0; /* funciona no sentido horário */
+    
+}
+
+.conteiner__aviso {
+    padding: 1em;
+
+}
+
+.botao_secundario {
+
+    background-color: transparent;
+    border: solid 2px var(--color-text-title-white);
+    color: var(--color-text-small-grey);
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 6em;
+}
+
+
+.secundario__imagem {
+   width: 80%; /* percentual em relação a coluna em que está inserida */
+}
+
